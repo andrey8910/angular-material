@@ -1,11 +1,35 @@
-<section>
-  <div class="example-label">Buttons</div>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
+
+
+<mat-tab-group>
+  <mat-tab label="Buttons">
+    <section>
+      <div class="example-label">Buttons</div>
+      <div class="example-button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="accent">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button disabled>Disabled</button>
+        <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+      </div>
+    </section>
+
+    <label id="example-radio-group-label">Pick your favorite season</label>
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+      [(ngModel)]="favoriteSeason"
+    >
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let season of seasons"
+        [value]="season"
+      >
+        {{ season }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div>Your favorite season is: {{ favoriteSeason }}</div>
+  </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>

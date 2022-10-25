@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-material';
+  favoriteSeason: string = "";
+  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
 }
