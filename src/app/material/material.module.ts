@@ -8,29 +8,38 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatBadgeModule} from '@angular/material/badge';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     MatButtonModule,
+    MatBadgeModule,
     MatTabsModule,
     MatRadioModule,
     MatInputModule,
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    DragDropModule
+    DragDropModule,
+    CdkAccordionModule,
+    MatDialogModule
 
   ],
   exports: [
     MatButtonModule,
+    MatBadgeModule,
     MatTabsModule,
     MatRadioModule,
     MatInputModule,
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    DragDropModule
+    DragDropModule,
+    CdkAccordionModule,
+    MatDialogModule
   ]
 })
 export class MaterialModule { }

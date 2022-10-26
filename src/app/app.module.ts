@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material/material.module";
+import { FirstCompanionComponent } from './dialog/first-companion/first-companion.component';
+import { SecondCompanionComponent } from './dialog/second-companion/second-companion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstCompanionComponent,
+    SecondCompanionComponent
   ],
   imports: [
     BrowserModule,
