@@ -6,6 +6,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [],
   imports: [
@@ -15,7 +17,9 @@ import {MatTableModule} from '@angular/material/table';
     MatRadioModule,
     MatInputModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    DragDropModule
 
   ],
   exports: [
@@ -24,7 +28,9 @@ import {MatTableModule} from '@angular/material/table';
     MatRadioModule,
     MatInputModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    DragDropModule
   ]
 })
 export class MaterialModule { }
