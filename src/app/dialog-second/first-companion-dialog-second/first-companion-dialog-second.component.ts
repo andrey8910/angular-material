@@ -35,4 +35,6 @@ export class FirstCompanionDialogSecondComponent implements OnInit {
       console.log(result)
     });
   }
+
+
 }

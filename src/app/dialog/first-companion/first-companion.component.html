@@ -2,12 +2,15 @@
   <h4>Dialog 1</h4>
   <mat-form-field appearance="fill">
     <mat-label>What's your name?</mat-label>
-    <input matInput [(ngModel)]="name">
+    <input matInput [(ngModel)]="dialogFirstName">
   </mat-form-field>
-  <button mat-raised-button (click)="openDialog()">Open dialog</button>
+  <button mat-raised-button (click)="openDialogFirst()">Open first dialog</button>
+  <button mat-raised-button (click)="openDialogSecond()">Open second dialog</button>
 
-  <p *ngIf="answerCompanion">
-    You answer: <i>{{answerCompanion}}</i>
+  <p *ngIf="answerCompanionDialogFirst">
+    Answer dialog 1: <i>{{answerCompanionDialogFirst}}</i>
   </p>
-
+  <p *ngIf="answerCompanionDialogSecond.answerText" class="textStyle" [style.color]="answerCompanionDialogSecond.answerColor">
+    Answer dialog 2: <i>Text: {{answerCompanionDialogSecond.answerText}}</i><i>Color: {{answerCompanionDialogSecond.answerColor}}</i>
+  </p>
 </div>
