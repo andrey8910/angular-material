@@ -9,7 +9,7 @@ import { SecondCompanionComponent } from '../second-companion/second-companion.c
 })
 export class FirstCompanionComponent implements OnInit {
   name: string = '';
-  answer: string = '';
+  answerCompanion: string = '';
 
   constructor(public dialog: MatDialog) { }
 
@@ -19,12 +19,15 @@ export class FirstCompanionComponent implements OnInit {
   openDialog(){
     const dialogRef = this.dialog.open(SecondCompanionComponent, {
       width: '250px',
-      data: {name: this.name, answer: this.answer},
+      data: {name: this.name, answer: this.answerCompanion},
+      disableClose: true,
+      panelClass: 'modal-dialog'
+
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.answer = result;
+      this.answerCompanion = result;
     });
   }
 

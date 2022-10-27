@@ -1,12 +1,15 @@
 <h1 mat-dialog-title>Hi, {{data.name}}!</h1>
 <div mat-dialog-content>
+  <button mat-button class="close-icon" [mat-dialog-close]="data.answer">
+    <mat-icon>close</mat-icon>
+  </button>
   <p>What is your question?</p>
   <mat-form-field appearance="fill">
     <mat-label>answer</mat-label>
-    <input matInput [(ngModel)]="data.animal">
+    <input matInput [(ngModel)]="data.answer">
   </mat-form-field>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No question!</button>
-  <button mat-button [mat-dialog-close]="data.animal">Ok</button>
+  <button mat-button [mat-dialog-close]="data.answer">Ok</button>
 </div>

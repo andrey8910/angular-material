@@ -1,10 +1,11 @@
 <div class="section-dialog">
+  <h4>Dialog 1</h4>
   <mat-form-field appearance="fill">
     <mat-label>What's your name?</mat-label>
     <input matInput [(ngModel)]="name">
   </mat-form-field>
   <button mat-raised-button (click)="openDialog()">Open dialog</button>
 </div>
-<p *ngIf="answer">
-  You answer: <i>{{answer}}</i>
+<p *ngIf="answerCompanion">
+  You answer: <i>{{answerCompanion}}</i>
 </p>
