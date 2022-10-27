@@ -1,0 +1,11 @@
+.section-second-dialog {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid darkgray;
+}
+.textStyle{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color:red
+}

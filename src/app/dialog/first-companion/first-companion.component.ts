@@ -26,8 +26,9 @@ export class FirstCompanionComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+
       this.answerCompanion = result;
+      console.log(result)
     });
   }
 

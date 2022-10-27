@@ -1,1 +1,27 @@
-<p>second-companion-dialog-second works!</p>
+<button mat-button class="close-icon" [mat-dialog-close]="data">
+  <mat-icon>close</mat-icon>
+</button>
+<div mat-dialog-content>
+
+  <p>What text?</p>
+  <mat-form-field appearance="fill">
+    <mat-label>text</mat-label>
+    <input matInput [(ngModel)]="data.answerText">
+  </mat-form-field>
+
+</div>
+
+<label id="example-radio-group-label">What color?</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="data.answerColor">
+  <mat-radio-button class="example-radio-button" *ngFor="let color of colors" [value]="color">
+    {{color}}
+  </mat-radio-button>
+</mat-radio-group>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data">Ok</button>
+</div>

@@ -5,7 +5,9 @@
     <input matInput [(ngModel)]="name">
   </mat-form-field>
   <button mat-raised-button (click)="openDialog()">Open dialog</button>
+
+  <p *ngIf="answerCompanion">
+    You answer: <i>{{answerCompanion}}</i>
+  </p>
+
 </div>
-<p *ngIf="answerCompanion">
-  You answer: <i>{{answerCompanion}}</i>
-</p>

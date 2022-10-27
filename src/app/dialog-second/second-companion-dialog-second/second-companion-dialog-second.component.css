@@ -1,0 +1,25 @@
+::ng-deep .modal-dialog-second .mat-dialog-container{
+  position: relative;
+  border: 2px solid red;
+  border-radius: 6px;
+}
+::ng-deep .modal-dialog-second .mat-dialog-container .close-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1px;
+
+  min-width: auto;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 2px;
+}
+

@@ -1,1 +1,8 @@
-<p>first-companion-dialog-second works!</p>
+<div class="section-second-dialog">
+  <h4>Dialog 2</h4>
+  <button mat-raised-button (click)="openDialog()">Open dialog</button>
+
+  <p *ngIf="answerCompanion.answerText" class="textStyle" [style.color]="answerCompanion.answerColor">
+    You answer: <i>Text: {{answerCompanion.answerText}}</i><i>Color: {{answerCompanion.answerColor}}</i>
+  </p>
+</div>
